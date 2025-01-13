@@ -1,63 +1,95 @@
-body{
+body {
     background-image: url(./assets/background.jpg);
-    color: white;
-    padding: 0px;
-    margin: 5px;
-    padding:5px ;
-}
-/* Head Section */
-.headPlace{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    text-align: left;
-    margin: 5px;
-}
-.headH1{
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-.headInput{
-    display: flex;
-    justify-content: space-around;
-    margin: 5px;
-}
-input{
-    margin-right: 5px;
-    padding: 5px;
-    border: none;
-    outline: none;
-    border-radius: 10px;
-    color: rgb(0, 0, 0);
-}
-button{
-    padding: 5px;
-    border: none;
-    outline: none;
-    border-radius: 50%;
-    color: rgb(0, 0, 0);
-    background-color: white;
-}
-button:hover{
-    scale: 1.1;
-}
-button:active{
-    scale: 1.0;
-}
-/* Head section end */
-
-/*  Reasult weather box*/
-.weatherContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.searchedCity{
+    margin: 0;
+    font-family: Arial, sans-serif;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 20%;
-    margin: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.weather-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.search-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.search-bar input {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: rgba(156, 148, 135, 0.413);
+    color: white;
     border-radius: 10px;
+}
+
+.search-bar button {
+    padding: 8px 8px;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: rgba(156, 148, 135, 0.413);
+}
+.search-bar button:hover {
+    scale: 1.1;
+}
+.search-bar button:active{
+    scale: 1.0;
+}
+hr{
+    width: 99%;
+    border-radius: 5px;
+    border: 3px solid rgba(107, 100, 100, 0.311);
+}
+marquee{
+    color: white;
+    font-size: 2rem;
+}
+.weatherCard{
+    margin: 10px;
+    width: 20%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(68, 71, 237, 0.333),rgba(0, 255, 242, 0.393));
+}
+#weatherStatus{
+    font-size: 5rem;
+    margin: 0px;
+}
+#cityName{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    margin: 0px;
+}
+#temperature{
+    color: white;
+    text-shadow: 1px 1px 1px black;
+    
+}
+.statusContainer{
+    display: flex;
+    justify-content: space-around;
+}
+.statusContainer p{
+    color: white;
+    text-shadow: 2px 2px 2px black;
 }

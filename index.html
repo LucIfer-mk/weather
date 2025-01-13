@@ -8,26 +8,25 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="headPlace">
-        <div class="headTxt">
-            <h1 class="headH1">Weather Today</h1>
-        </div>
-        <div class="headInput">
-            <input type="text" placeholder="Enter City">
-            <button onclick="">🔍</button>
+    <div class="container">
+        <div class="weather-text">Weather News</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search city..." id="cityNameInput">
+            <button onclick="getWeatherData()">🔍</button>
         </div>
     </div>
-
-    <div class="weatherContainer">
-        <div class="searchedCity">
-            <h1></h1>
-            <h1></h1>
-            <h1></h1>
-            <h1></h1>
+    <hr>
+        <marquee direction="right">Climate Change and Global Warming are Real !!</marquee>
+    <hr>
+    <div class="weatherCard" style="display: none;">
+        <h1 id="weatherStatus"></h1>
+        <h2 id="cityName"></h2>
+        <h1 id="temperature"></h1>
+        <div class="statusContainer">
+            <p id="windSpeed"></p>
+            <p id="humidity"></p>
         </div>
     </div>
-    
-    
 <script src="script.js"></script>
 </body>
 </html>
