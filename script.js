@@ -6,7 +6,21 @@ async function getWeatherData() {
     data = await respond.json();
     
     const weatherStatus = document.getElementById("weatherStatus");
-    weatherStatus.textContent = data.weather.main;
+    if(data.weather[0].main === "Clouds"){
+        weatherStatus.textContent = "☁️";
+    }
+    else if(data.weather[0].main === "Clear"){
+        weatherStatus.textContent = "☀️";
+    }
+    else if(data.weather[0].main === "Rain"){
+        weatherStatus.textContent = "🌧️";
+    }
+    else if(data.weather[0].main === "Drizzle"){
+        weatherStatus.textContent = "🌦️";
+    }
+    else if(data.weather[0].main === "Mist"){
+        weatherStatus.textContent = "💨";
+    }
 
     const cityName = document.getElementById("cityName");
     cityName.textContent = data.name;
